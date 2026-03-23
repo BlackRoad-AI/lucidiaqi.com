@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucidia</title>
+<meta name="description" content="Lucidia — AI companion. Local-first, sovereign intelligence.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="Lucidia"><meta property="og:url" content="https://lucidia.earth"><meta property="og:image" content="https://images.blackroad.io/brand/blackroad-og.png">
+<link rel="canonical" href="https://lucidia.earth">
+<link rel="icon" type="image/png" href="https://images.blackroad.io/brand/favicon.png">
+<style>*{margin:0;padding:0;box-sizing:border-box}html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth}:root{--g:linear-gradient(90deg,#FF6B2B,#FF2255,#CC00AA,#8844FF,#4488FF,#00D4FF);--g135:linear-gradient(135deg,#FF6B2B,#FF2255,#CC00AA,#8844FF,#4488FF,#00D4FF);--bg:#000;--border:#1a1a1a;--sub:#999;--dim:#333;--sg:'Space Grotesk',sans-serif;--jb:'JetBrains Mono',monospace}body{background:var(--bg);color:#f5f5f5;font-family:var(--sg);overflow-x:hidden;padding-bottom:48px}.grad-bar{height:4px;background:var(--g)}.container{max-width:100%;margin:0 auto;padding:32px 16px 0}.section{margin-bottom:40px}.section-label{font-family:var(--jb);font-size:10px;font-weight:500;color:var(--sub);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}.title{font-size:24px;font-weight:700;color:#fff;margin-bottom:4px}.subtitle{font-size:13px;color:#aaa;margin-bottom:32px}.mark{width:24px;height:3px;border-radius:2px;background:var(--g);margin-bottom:16px}.card{border:1px solid var(--border);border-radius:10px;padding:16px;background:#0a0a0a;transition:border-color .2s,transform .15s;margin-bottom:10px;cursor:pointer}.card:hover{border-color:var(--dim)}.card:active{transform:scale(.985)}.card.no-click{cursor:default}.card.no-click:active{transform:none}.card-detail{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:#aaa;line-height:1.7}.card.open .card-detail{display:block}.card-arrow{float:right;font-size:14px;color:#555;transition:transform .2s}.card.open .card-arrow{transform:rotate(90deg)}.grid-2,.grid-3{display:grid;gap:10px;margin-bottom:16px}.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.stat-val{font-size:22px;font-weight:700;color:#fff}.stat-label{font-family:var(--jb);font-size:9px;color:#aaa;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}.dot{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:6px}.dot-live{background:var(--g135)}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}.pulse{animation:pulse 2s infinite}.circle-accent{width:8px;height:8px;border-radius:50%;background:var(--g135);display:inline-block}
+.widget-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}.widget{border:1px solid var(--border);border-radius:12px;padding:16px;background:#0a0a0a;cursor:grab;transition:border-color .2s,transform .15s;position:relative;min-height:90px;display:flex;flex-direction:column;user-select:none}.widget:hover{border-color:var(--dim)}.widget:active{cursor:grabbing;transform:scale(.97)}.widget.dragging{opacity:.5}.widget.drag-over{border-color:#888;background:#111}.widget-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;margin-bottom:10px;background:#111;border:1px solid var(--border)}.widget-name{font-size:12px;font-weight:600;color:#ddd;margin-bottom:2px}.widget-desc{font-family:var(--jb);font-size:9px;color:#888}.widget-link{position:absolute;inset:0;border-radius:12px;z-index:1}.widget-badge{position:absolute;top:8px;right:8px;font-family:var(--jb);font-size:8px;color:#666;background:#111;border:1px solid var(--border);border-radius:4px;padding:1px 5px}.widget-palette{display:none;border:1px solid var(--border);border-radius:12px;background:#0a0a0a;padding:16px;margin-bottom:16px}.widget-palette.open{display:block}.widget-palette-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}.widget-palette-item{border:1px solid var(--border);border-radius:8px;padding:10px;cursor:pointer;font-size:11px;color:#aaa}.widget-palette-item:hover{border-color:#555;color:#ddd}.widget-edit-mode .widget{animation:wiggle .3s ease-in-out infinite alternate}.widget-edit-mode .widget:nth-child(2n){animation-delay:.15s}@keyframes wiggle{0%{transform:rotate(-.5deg)}100%{transform:rotate(.5deg)}}.widget-remove{display:none;position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:50%;background:#333;border:1px solid #555;color:#aaa;font-size:11px;cursor:pointer;z-index:2;align-items:center;justify-content:center;line-height:1}.widget-edit-mode .widget-remove{display:flex}
+@media(min-width:600px){.container{padding:40px 24px 0;max-width:880px}.grid-3{grid-template-columns:repeat(3,1fr)}.widget-grid{grid-template-columns:repeat(3,1fr)}.widget-palette-grid{grid-template-columns:repeat(3,1fr)}.title{font-size:28px}}
+@media(min-width:900px){.container{padding:48px 24px 0}.grid-2{grid-template-columns:repeat(2,1fr)}.widget-grid{grid-template-columns:repeat(4,1fr)}.widget-palette-grid{grid-template-columns:repeat(4,1fr)}.title{font-size:32px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="grad-bar"></div>
+<div class="container">
+  <div class="section"><div class="mark"></div><div class="title">Lucidia</div><div class="subtitle">AI companion  ·  Local-first  ·  Sovereign intelligence</div></div>
+
+  <div class="section">
+    <div class="section-label">About</div>
+    <div class="card no-click">
+      <p style="font-size:13px;color:#ccc;line-height:1.8">Lucidia is BlackRoad's AI companion platform. Voice-first, faceless content creation. Runs on owned hardware — no cloud APIs, no data leaving the network. Every conversation stays local.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Capabilities</div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:13px;font-weight:500;color:#ddd"><span class="dot dot-live"></span>Local Inference</div><div class="card-detail">Ollama running on 4 nodes. 16+ models including llama3, mistral, codellama, phi, gemma. 52 TOPS via Hailo-8 accelerators. Zero external API calls.</div></div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:13px;font-weight:500;color:#ddd"><span class="dot dot-live"></span>RAG Knowledge</div><div class="card-detail">Qdrant vector store on Alice. nomic-embed-text embeddings on Cecilia. 693 codex solutions, TIL broadcasts, journal entries, academic papers indexed for context-augmented generation.</div></div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:13px;font-weight:500;color:#ddd"><span class="dot dot-live"></span>50 AI Skills</div><div class="card-detail">6 skill modules across reasoning, code generation, creative writing, math, research, and conversation. Each skill maps to specific model + prompt combinations.</div></div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:13px;font-weight:500;color:#ddd"><span class="dot dot-live"></span>Voice Interface</div><div class="card-detail">Voice-first interaction design. Whisper for STT, local TTS. Designed for faceless content creation — podcasts, narration, tutorials without showing face.</div></div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:13px;font-weight:500;color:#ddd"><span class="dot dot-live"></span>Agent Network</div><div class="card-detail">109 agents across RoundTrip. Auto-chat, fleet reports, debate endpoints. Each agent has a persona, skills, and memory. Coordinated via NATS pub/sub.</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Lucidia Domains</div>
+    <div class="card no-click">
+      <a href="https://lucidia.earth" style="text-decoration:none;display:block"><div class="row"><span class="row-key"><span class="dot dot-live"></span>lucidia.earth</span><span class="row-val" style="font-family:var(--jb);font-size:10px;color:#666">Primary</span></div></a>
+      <a href="https://lucidia.studio" style="text-decoration:none;display:block"><div class="row"><span class="row-key"><span class="dot dot-live"></span>lucidia.studio</span><span class="row-val" style="font-family:var(--jb);font-size:10px;color:#666">Studio</span></div></a>
+      <a href="https://lucidiaqi.com" style="text-decoration:none;display:block"><div class="row"><span class="row-key"><span class="dot dot-live"></span>lucidiaqi.com</span><span class="row-val" style="font-family:var(--jb);font-size:10px;color:#666">QI</span></div></a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Hardware</div>
+    <div class="card no-click">
+      <p style="font-size:12px;color:#aaa;line-height:1.8">Lucidia runs on a dedicated Pi 5 node (192.168.4.38) with Ollama, PowerDNS, GitHub Actions runners, and 334 web apps via nginx. SD card is degrading — backup completed, replacement planned.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><div class="section-label" style="margin-bottom:0">Apps & Tools</div><button onclick="toggleEditMode()" style="background:none;border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-family:var(--jb);font-size:9px;color:#888;cursor:pointer" id="edit-btn">Edit</button></div>
+    <div class="widget-palette" id="widget-palette"><div style="font-size:12px;color:#aaa;margin-bottom:4px">Add a widget</div><div class="widget-palette-grid" id="palette-grid"></div></div>
+    <div class="widget-grid" id="widget-grid"></div>
+  </div>
+  <div class="section" style="text-align:center"><span style="font-size:11px;color:#aaa"><span class="circle-accent pulse"></span>&nbsp; Lucidia uptime: <span id="uptime">...</span></span></div>
+</div>
+<div class="grad-bar" style="margin-top:24px"></div>
+<script>
+function toggle(el){el.classList.toggle('open');}
+var WIDGET_CATALOG=[{id:'chat',name:'Chat',desc:'RoundTrip',icon:'💬',href:'https://chat.blackroad.io',badge:'Live'},{id:'search',name:'Search',desc:'Search all',icon:'🔍',href:'https://search.blackroad.io',badge:'Live'},{id:'ai',name:'AI',desc:'Playground',icon:'🧠',href:'https://blackroadai.com'},{id:'network',name:'Network',desc:'Mesh',icon:'🌐',href:'https://blackroad.network'},{id:'systems',name:'Systems',desc:'Fleet',icon:'🖥',href:'https://blackroad.systems'},{id:'company',name:'Company',desc:'Corporate',icon:'🏛',href:'https://blackroad.company'},{id:'quantum',name:'Quantum',desc:'QI',icon:'⚛',href:'https://blackroadquantum.com'},{id:'lucidia',name:'Lucidia',desc:'Companion',icon:'✧',href:'https://lucidia.earth'},{id:'math',name:'Math',desc:'Amundson',icon:'∑',href:'https://github.com/BlackRoad-OS-Inc/amundson-constant'},{id:'github',name:'GitHub',desc:'Source',icon:'⚡',href:'https://github.com/BlackRoad-OS-Inc'},{id:'status',name:'Status',desc:'Fleet',icon:'📡',href:'https://status.blackroad.io'},{id:'identity',name:'Identity',desc:'Profile',icon:'👤',href:'https://blackroad.me'}];
+var STORAGE_KEY='br-widgets-lucidia';var DEFAULT_WIDGETS=['lucidia','ai','chat','search','quantum','network','github','company'];
+function getActiveWidgets(){try{var s=localStorage.getItem(STORAGE_KEY);if(s)return JSON.parse(s);}catch(e){}return DEFAULT_WIDGETS.slice();}
+function saveActiveWidgets(ids){localStorage.setItem(STORAGE_KEY,JSON.stringify(ids));}
+var editMode=false;function toggleEditMode(){editMode=!editMode;document.getElementById('edit-btn').textContent=editMode?'Done':'Edit';document.getElementById('widget-palette').classList.toggle('open',editMode);document.getElementById('widget-grid').classList.toggle('widget-edit-mode',editMode);renderWidgets();renderPalette();}
+function renderWidgets(){var ids=getActiveWidgets();document.getElementById('widget-grid').innerHTML=ids.map(function(id,i){var w=WIDGET_CATALOG.find(function(x){return x.id===id});if(!w)return '';return '<div class="widget" draggable="true" data-id="'+w.id+'" data-index="'+i+'" ondragstart="wDragStart(event)" ondragover="wDragOver(event)" ondrop="wDrop(event)" ondragend="wDragEnd(event)">'+(editMode?'<div class="widget-remove" onclick="removeWidget(\''+w.id+'\')">×</div>':'')+'<div class="widget-icon">'+w.icon+'</div><div class="widget-name">'+w.name+'</div><div class="widget-desc">'+w.desc+'</div>'+(w.badge?'<div class="widget-badge">'+w.badge+'</div>':'')+(!editMode?'<a href="'+w.href+'" target="_blank" class="widget-link"></a>':'')+'</div>';}).join('');}
+function renderPalette(){var ids=getActiveWidgets();var avail=WIDGET_CATALOG.filter(function(w){return ids.indexOf(w.id)===-1});var pg=document.getElementById('palette-grid');if(!avail.length){pg.innerHTML='<div style="font-size:11px;color:#555;padding:8px">All added</div>';return;}pg.innerHTML=avail.map(function(w){return '<div class="widget-palette-item" onclick="addWidget(\''+w.id+'\')">'+w.icon+' '+w.name+'</div>';}).join('');}
+function addWidget(id){var ids=getActiveWidgets();if(ids.indexOf(id)===-1){ids.push(id);saveActiveWidgets(ids);}renderWidgets();renderPalette();}
+function removeWidget(id){var ids=getActiveWidgets().filter(function(x){return x!==id});saveActiveWidgets(ids);renderWidgets();renderPalette();}
+var dragIdx=null;function wDragStart(e){dragIdx=+e.target.closest('.widget').dataset.index;e.target.closest('.widget').classList.add('dragging');}function wDragOver(e){e.preventDefault();e.target.closest('.widget')?.classList.add('drag-over');}function wDrop(e){e.preventDefault();document.querySelectorAll('.widget').forEach(function(x){x.classList.remove('drag-over')});var t=e.target.closest('.widget');if(!t)return;var ti=+t.dataset.index;if(dragIdx===null||dragIdx===ti)return;var ids=getActiveWidgets();var m=ids.splice(dragIdx,1)[0];ids.splice(ti,0,m);saveActiveWidgets(ids);renderWidgets();}function wDragEnd(e){dragIdx=null;document.querySelectorAll('.widget').forEach(function(x){x.classList.remove('dragging','drag-over')});}
+renderWidgets();
+var founded=new Date('2025-11-17T00:00:00Z');function uptime(){var diff=Date.now()-founded;var d=Math.floor(diff/86400000);var h=Math.floor((diff%86400000)/3600000);var m=Math.floor((diff%3600000)/60000);document.getElementById('uptime').textContent=d+'d '+h+'h '+m+'m';}uptime();setInterval(uptime,60000);
+</script>
+</body>
+</html>
